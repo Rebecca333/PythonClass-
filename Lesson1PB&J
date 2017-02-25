@@ -1,0 +1,29 @@
+PB = 290
+J = 713098
+B = 59
+UB = B / 2
+OB = B % 2
+
+if PB <= J & PB < UB:
+	B = B - (2*PB)
+	J = J - PB
+	print "You have enough supplies to make {0} sandwiches with {1} slices of bread and {2} servings of jelly left over.".format(PB, B, J)
+elif J < PB & J < UB:
+	B = B - (2*J)
+	PB = PB - J
+	print "You have enough supplies to make {0} sandwiches with {1} slices of bread and {2} servings of peanut butter left over.".format(J, B, PB)
+elif UB < J & OB == 0:
+	PB = PB - UB
+	J = J - UB
+	print "You have enough supplies to make {0} sandwiches with {1} servings of peanut butter and {2} servings of jelly left over.".format(UB, PB, J)
+elif OB != 0:
+	B = B - OB
+	UB=B / 2
+	PB = PB - UB
+	J = J - UB
+	print "You have enough supplies to make {0} sandwiches.".format(UB)
+	PB = PB - OB
+	J = J - OB
+	print "You have enough supplies to make {0} open sandwiches with {1} servings of peanut butter and {2} servings of jelly left over.".format(OB, PB, J)
+else:
+	print "You have enough supplies to make exactly {0} sandwiches.".format(PB)
