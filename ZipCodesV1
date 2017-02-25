@@ -1,0 +1,25 @@
+studybuddy_1 = 'Alison McCauley, 1234 County Line Road, Skaneateles, NY 13152'
+studybuddy_2 = 'Dee Cater, 555 Bradford Pkwy, Syracuse, NY 13224'
+studybuddy_3 = 'Andrea Bianchi, 987 South St, Jamesville, NY 13078'
+studybuddy_4 = 'Kristen Link Logan, 264 Craig Street, Syracuse, NY 13211'
+studybuddy_5 = 'Nina Verity, 111 Bridge St, Solvey, NY 13209'
+
+sbzip_1 = studybuddy_1[56:]
+sbzip_2 = studybuddy_2[43:]
+sbzip_3 = studybuddy_3[45:]
+sbzip_4 = studybuddy_4[51:]
+sbzip_5 = studybuddy_5[39:]
+
+print "{0}".format(sbzip_1)
+print "{0}".format(sbzip_2)
+print "{0}".format(sbzip_3)
+print "{0}".format(sbzip_4)
+print "{0}".format(sbzip_5)
+
+sbname_1 = studybuddy_1[0:6]
+sbname_2 = studybuddy_2[0:3]
+sbname_3 = studybuddy_3[0:6]
+sbname_4 = studybuddy_4[0:7]
+sbname_5 = studybuddy_5[0:4]
+
+print "Our study groups consists of {0}, {1}, {2}, {3}, and {4} who live in {5}, {6}, {7}, {8}, and {9} respectively.".format(sbname_1, sbname_2, sbname_3, sbname_4, sbname_5, sbzip_1, sbzip_2, sbzip_3, sbzip_4, sbzip_5)
